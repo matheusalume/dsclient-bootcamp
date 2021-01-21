@@ -27,8 +27,20 @@ public class ClientService {
 
 	@Transactional(readOnly = true)
 	public ClientDTO findById(Long id) {
-		Optional<Client> opt = repository.findById(id);
-		Client client = opt.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
-		return new ClientDTO(client);
+		Optional<Client> obj = repository.findById(id);
+		Client entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
+		return new ClientDTO(entity);
+	}
+
+	@Transactional
+	public ClientDTO insert(ClientDTO dto) {
+		Client entity = new Client();
+		entity.setName(dto.getName());
+		entity.setCpf(dto.getCpf());
+		entity.setChildren(dto.getChildren());
+		entity.setIncome(dto.getIncome());
+		entity.setBirthDate(dto.getBirthDate());
+		entity = repository.save(entity);
+		return new ClientDTO(entity);
 	}
 }
