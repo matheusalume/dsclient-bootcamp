@@ -9,6 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.dsclient.entities.Client;
 import com.devsuperior.dsclient.repositories.ClientRepository;
+import com.devsuperior.dsclient.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class ClientService {
@@ -24,7 +25,7 @@ public class ClientService {
 
 	public Client findById(Long id) {
 		Optional<Client> opt = repository.findById(id);
-		Client client = opt.orElseThrow(() -> new RuntimeException());
+		Client client = opt.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
 		return client;
 	}
 }
