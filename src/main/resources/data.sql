@@ -1,2 +1,10 @@
-INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Matheus', '98765432100', 9000.0, 2, TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z');
-INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Pedro', '12345678900', 7000.0, 2, TIMESTAMP WITH TIME ZONE '2020-07-14T10:00:00Z');
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Raquel Sueli Larissa Rocha', '64162619280', 9500.0, 2, TIMESTAMP WITH TIME ZONE '1994-06-05T10:23:12Z');
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Simone Rebeca Antônia Rezende', '28616577319', 7420.0, 0, TIMESTAMP WITH TIME ZONE '1983-10-20T12:56:43Z');
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Elaine Tereza Figueiredo', '44316070991', 2440.0, 2, TIMESTAMP WITH TIME ZONE '1981-01-08T01:43:11Z');
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Bruno Hugo Silva', '20188440240', 7900.0, 0, TIMESTAMP WITH TIME ZONE '1966-11-16T10:20:43Z');
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Felipe Pietro Mário da Luz', '39199767112', 4080.0, 3, TIMESTAMP WITH TIME ZONE '1959-03-07T09:57:30Z');
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Pedro Henrique Enzo Almeida', '75168639470', 7000.0, 1, TIMESTAMP WITH TIME ZONE '1955-03-17T19:08:42Z');
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Allana Brenda da Mota', '08315622005', 3650.0, 6, TIMESTAMP WITH TIME ZONE '1961-07-12T23:58:32Z');
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Carlos Manuel Lucas Vieira', '04699121209', 14270.0, 3, TIMESTAMP WITH TIME ZONE '1959-10-11T02:00:44Z');
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Martin Gael Moraes', '09876144014', 8390.0, 1, TIMESTAMP WITH TIME ZONE '1964-07-20T16:09:32Z');
+INSERT INTO tb_client (name, cpf, income, children, birth_date) VALUES ('Fabiana Isabella Rita Barbosa', '83864761921', 17110.0, 2, TIMESTAMP WITH TIME ZONE '1947-06-04T18:33:01Z');
